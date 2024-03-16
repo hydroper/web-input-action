@@ -1,7 +1,7 @@
 # Web input action
 
 <p align="center">
-  <a href="https://tsdocs.dev/docs/com.hydroper.webinputaction/1.1.1/index.html">
+  <a href="https://tsdocs.dev/docs/com.hydroper.webinputaction/latest/index.html">
     <img src="https://img.shields.io/badge/TypeDoc%20Documentation-gray">
   </a>
 </p>
@@ -18,7 +18,7 @@ Features:
 
 ## Documentation
 
-Refer to the [TypeDoc documentation](https://tsdocs.dev/docs/com.hydroper.webinputaction/1.1.1/index.html) for full details.
+Refer to the [TypeDoc documentation](https://tsdocs.dev/docs/com.hydroper.webinputaction/latest/index.html) for full details.
 
 ### Getting started
 
