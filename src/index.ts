@@ -7,8 +7,16 @@ export type {
     InputActionKeyName,
 } from "./InputAction";
 
-export function inputActionDisplayText(atoms: InputActionAtom[]): string {
-    for (const atom of atoms) {
+/**
+ * Returns the display text of a shortcut, such as `"Ctrl+A"`.
+ *
+ * @param param Either an action name or a series of action atoms.
+ */
+export function shortcutDisplayText(param: string | InputActionAtom[]): string {
+    if (typeof param == "string") {
+        return shortcutDisplayText(Input.input.getActions()[param]);
+    }
+    for (const atom of param as InputActionAtom[]) {
         if (atom.hasOwnProperty("key")) {
             const key = atom as InputActionKey;
             const parts = [];
